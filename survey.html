@@ -10,12 +10,58 @@ A question on whether my game reveiw changed their mind
 A picture for each question
 and a copypaste picture for when they reach the end =]-->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <a href="index.html"></a>
+    <h1>This is the survey!</h1>
+    <form action="">
+      <fieldset>
+        <legend>Do you like to play games?</legend>
+        <label
+          ><input id="yes" type="radio" name="yes-no" value="yes" checked />
+          Yes</label
+        >
+        <label><input id="no" type="radio" name="yes-no" value="no" />No</label>
+      </fieldset>
+      <fieldset>
+        <legend>What is your favorite genre?</legend>
+        <input
+          id="horror"
+          type="checkbox"
+          name="genre"
+          value="horror"
+          checked
+        />
+        <label for="horror">Horror</label>
+        <input id="romance" type="checkbox" name="genre" value="romance" />
+        <label for="romance">Romance</label>
+        <input id="action" type="checkbox" name="genre" value="action" />
+        <label for="action">Action</label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          How many players do you like to have with you when you play?
+        </legend>
+        <input id="0" type="checkbox" name="num" value="0" checked />
+        <label for="0">Zero</label>
+        <input id="1" type="checkbox" name="num" value="1" />
+        <label for="1">One</label>
+        <input id="2" type="checkbox" name="num" value="2" />
+        <label for="2">Two</label>
+        <input id="3+" type="checkbox" name="num" value="3+" />
+        <label for="3+">Three</label>
+      </fieldset>
+      <input
+        type="text"
+        name="favoriteGame"
+        placeholder="your favorite game"
+        required
+      />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
